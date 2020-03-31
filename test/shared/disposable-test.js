@@ -8,7 +8,7 @@ describe('disposable', function () {
     const x = disposable.of()
     assert.strictEqual(x.disposed(), false)
   })
-
+// test
   it('is disposed after disposing', function () {
     const x = disposable.of()
     x.dispose()
