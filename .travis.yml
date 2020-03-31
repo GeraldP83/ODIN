@@ -7,4 +7,4 @@ dist: xenial
 services:
   - xvfb
 
-script: xvfb-run npm test
+script: xvfb-run -e /dev/stdout npm test
