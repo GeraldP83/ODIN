@@ -3,3 +3,9 @@ node_js:
   - 12
 services:
   - xvfb
+
+jobs:
+  include:
+    - stage: Test
+      script:
+        - npm test
