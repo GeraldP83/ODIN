@@ -23,7 +23,7 @@ describe('disposable', function () {
         expected += 1
       })
     })
-    // halls
+    // hallss
 
     x.dispose()
     assert.strictEqual(expected, 10)
