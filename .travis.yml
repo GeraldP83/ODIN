@@ -7,4 +7,4 @@ dist: xenial
 services:
   - xvfb
 
-script: xvfb-run --auto-servernum --server-num=1 -e /dev/stdout npm test
+script: xvfb-run --auto-servernum --server-num=1 -e /dev/stdout npm run spectron
