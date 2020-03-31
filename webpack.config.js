@@ -115,3 +115,4 @@ module.exports = (env, argv) => {
   const main = mainConfig(env, argv)
   return [renderer, main]
 }
+
