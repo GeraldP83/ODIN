@@ -4,12 +4,9 @@ import archiver from 'archiver'
 import StreamZip from 'node-stream-zip'
 import uuid from 'uuid-random'
 
-/*  since this module is shared and may be uses both in the main and in the
-    renderer process we must import both in order to resolve the HOME path
-*/
-import { app, remote } from 'electron'
+import * as settings from './settings'
 
-const HOME = remote ? remote.app.getPath('home') : app.getPath('home')
+const HOME = settings.homePath()
 const ODIN_HOME = path.join(HOME, 'ODIN')
 const ODIN_PROJECTS = path.join(ODIN_HOME, 'projects')
 const ODIN_LAYERS = 'layers'
