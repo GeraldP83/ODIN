@@ -4,9 +4,9 @@ import archiver from 'archiver'
 import StreamZip from 'node-stream-zip'
 import uuid from 'uuid-random'
 
-import * as settings from './settings'
+import { odinHome } from './settings'
 
-const HOME = settings.homePath()
+const HOME = odinHome()
 const ODIN_HOME = path.join(HOME, 'ODIN')
 const ODIN_PROJECTS = path.join(ODIN_HOME, 'projects')
 const ODIN_LAYERS = 'layers'
