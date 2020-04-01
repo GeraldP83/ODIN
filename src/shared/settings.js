@@ -11,8 +11,8 @@ export const homePath = () => {
     const settings = JSON.parse(fs.readFileSync(settingsPath))
     if (settings.home !== 'default' && fs.existsSync(settings.home)) return settings.home
     return appData
-  } catch (error) {
-    console.error('Cannot parse JSON from : ' + settingsPath + 'setting project home to: ' + appData)
+  } catch (err) {
+    console.error('Cannot parse JSON from: ' + settingsPath + ' setting project home to: ' + appData)
     return appData
   }
 }
